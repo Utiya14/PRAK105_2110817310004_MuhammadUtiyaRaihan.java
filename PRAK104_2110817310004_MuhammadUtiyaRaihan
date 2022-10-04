@@ -1,0 +1,61 @@
+package pemrogramanii;
+import java.util.Scanner;
+
+public class PRAK104_2110817310004_MuhammadUtiyaRaihan {
+    
+    public static void main(String[]args){
+        Scanner keyboard = new Scanner(System.in);
+        int nilaiandi=0, nilaibudi=0;
+        int [] andi = new int[3];
+        
+        System.out.print("Kartu Andi: ");
+        for (int i=0; i<=2; i = i + 1){
+            andi[i] = keyboard.nextInt();
+            if(andi[i] < 2 || andi[i] > 10 ){
+                System.out.println("Kartu hanya boleh dari 2 sampai dengan 10");
+                return;
+            }
+        }
+        
+        int [] budi = new int[3];
+        
+        System.out.print("Kartu Budi: ");
+        for (int i=0; i<=2; i = i + 1){
+            budi[i] = keyboard.nextInt();
+            if(budi[i] < 2 || budi[i] > 10 ){
+                System.out.println("Kartu hanya boleh dari 2 sampai dengan 10");
+                return;
+            }
+        }
+        
+        for (int i=0; i<=2; i = i + 1){
+            if(andi[i] > budi[i]){
+               nilaiandi = nilaiandi+1;
+            }
+            else if(budi[i] > andi[i]){
+                nilaibudi = nilaibudi+1;
+            }
+        }
+        if(nilaiandi > nilaibudi){
+            System.out.println("Andi");
+        }else if (nilaiandi < nilaibudi){
+            System.out.println("Budi");
+        }else{
+            System.out.println("Seri");
+        }
+        /* 
+        int p1r1,p1r2,p1r3,p2r1,p2r2,p2r3;
+        //p disini melambangkan pemain yakni Andi
+        //r disini melambangkan ronde yang sedang berjalan
+        
+        System.out.println("Kartu Andi: ");
+        p1r1 = keyboard.nextInt();
+        p1r2 = keyboard.nextInt();
+        p1r3 = keyboard.nextInt();
+        keyboard.nextLine();
+        
+        System.out.println("Kartu Budi: ");
+      */  
+    
+  }      
+}
