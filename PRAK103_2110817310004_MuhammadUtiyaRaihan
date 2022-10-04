@@ -1,0 +1,23 @@
+package pemrogramanii;
+import java.util.Scanner;
+
+public class PRAK103_2110817310004_MuhammadUtiyaRaihan {
+   
+    
+    public static void main(String[]args){
+        int user, deret = 1;
+        Scanner keyboard = new Scanner(System.in);
+        
+        user = keyboard.nextInt();
+        
+        do {
+            if (user % 7 == 0){
+                continue;
+            }
+            System.out.print(user + " ");
+            deret = deret + 1;
+            user = user - 1;
+            
+        } while (deret <= 5);
+    }
+}
