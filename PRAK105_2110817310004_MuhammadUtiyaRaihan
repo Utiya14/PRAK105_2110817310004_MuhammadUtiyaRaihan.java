@@ -1,0 +1,23 @@
+package pemrogramanii;
+import java.util.Scanner;
+
+public class PRAK105_2110817310004_MuhammadUtiyaRaihan {
+    
+    public static void main(String[]args){
+    final float PHI = 3.14f;
+    Scanner keyboard = new Scanner(System.in);
+    float jari, tinggi, hasil;
+    
+    
+    
+        System.out.print("Masukkan jari: ");
+        jari = keyboard.nextFloat();
+   
+        System.out.print("Masukkan tinggi: ");
+        tinggi = keyboard.nextFloat();
+     
+        hasil = PHI * jari * jari * tinggi;
+        
+        System.out.printf("Volume tabung dengan jari-jari dan tinggi "  + tinggi + " cm adalah  m3"); 
+    }
+}
