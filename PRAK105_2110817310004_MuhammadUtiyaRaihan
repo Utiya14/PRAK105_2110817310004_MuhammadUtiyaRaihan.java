@@ -18,6 +18,6 @@ public class PRAK105_2110817310004_MuhammadUtiyaRaihan {
      
         hasil = PHI * jari * jari * tinggi;
         
-        System.out.printf("Volume tabung dengan jari-jari dan tinggi "  + tinggi + " cm adalah  m3"); 
+        System.out.printf("Volume tabung dengan jari-jari " + jari + " dan tinggi "  + tinggi + " cm adalah " + hasil + "  m3"); 
     }
 }
