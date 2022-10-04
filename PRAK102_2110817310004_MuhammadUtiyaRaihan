@@ -1,0 +1,26 @@
+package pemrogramanii;
+import java.util.Scanner;
+
+public class PRAK102_2110817310004_MuhammadUtiyaRaihan {
+    
+    public static void main(String[]args){
+        int user, deret = 1;
+        Scanner keyboard = new Scanner(System.in);
+        
+
+        user = keyboard.nextInt();
+        
+        while (deret <= 7){
+            int nilai;
+            if (user % 2 == 0){
+                nilai = user/2 - 1;
+                System.out.print(" " + nilai + " ");
+            } else {
+                System.out.print(user);
+            }
+            deret = deret + 1;
+            user = user + 1;
+        }
+        System.out.println();
+    }
+}
